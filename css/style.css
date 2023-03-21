@@ -341,19 +341,47 @@ table td{
     font-weight: bold;
     margin-bottom: 5%;
 }
+.footer__container-line{
+    position: relative;
+    height: 30px;
+    width: 50vw;
+}
+
+.footer__container-line::after{
+    position: absolute;
+    top: -70%;
+    left: 97%;
+    margin: 0 1rem;
+    content: "";
+    width: 0.5px;
+    /*--縦線の太さ(幅)--*/
+    height: 100%;
+    background-color: #E91A84;
+    /*--縦線の色--*/
+}
 
 .footer__container-inquiry-button{
+    position: relative;
     display: inline-block;
     color: #ffffff;
     width: fit-content;
     background:linear-gradient(90deg,#E91A84,#B11568) ;
     box-shadow:0px 10px 0px #840151;
     margin-bottom: 5%;
-    padding: 2% 5%;
+    padding: 2% 6%;
     border-radius: 90px;
 }
 .footer__container-inquiry-button::before{
-    content: url(../img/mail.png);
+    content:"";
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    background: url(../img/mailicon.svg);
+    background-size: cover;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
 }
 
 
